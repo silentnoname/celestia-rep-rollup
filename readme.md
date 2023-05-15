@@ -1,5 +1,5 @@
-# rep
-**rep** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli). Functioning as a rollup chain, it operates seamlessly on Celestia.
+# Rep
+**Rep** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli). Functioning as a rollup chain, it operates seamlessly on Celestia.
 
 ## Overview
 Rep allows users to create their own identities, update them and '+rep' or 'like' other users, thereby enhancing their reputation. The reputation of a user is determined by the number of 'likes' they receive. A comprehensive list of all identities within the chain can also be viewed.
@@ -54,7 +54,7 @@ If you are running testnet on remote machine
 ```
 bash init.sh <your light node gateway url>
 ```
-
+e.g. `http://x.x.x.x:26659`
 **Note**: Ensure that the account of your light node has enough balance to pay PFB transactions.
 
 ### Examples
