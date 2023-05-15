@@ -1,0 +1,10 @@
+syntax = "proto3";
+package rep.rep;
+
+option go_package = "rep/x/rep/types";
+
+message LikesRecord {
+  
+  string liker = 1; 
+  uint64 liked = 2; 
+}

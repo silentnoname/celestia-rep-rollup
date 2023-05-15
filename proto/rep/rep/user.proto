@@ -1,0 +1,13 @@
+syntax = "proto3";
+package rep.rep;
+
+option go_package = "rep/x/rep/types";
+
+message User {
+  
+  string name = 1; 
+  uint64 uid = 2; 
+  string description = 3;
+  uint64 point = 4; 
+  string wallet = 5; 
+}

@@ -1,0 +1,45 @@
+syntax = "proto3";
+package rep.rep;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "rep/x/rep/types";
+
+// Msg defines the Msg service.
+service Msg {
+      rpc CreateUser(MsgCreateUser) returns (MsgCreateUserResponse);
+  rpc UpdateUser(MsgUpdateUser) returns (MsgUpdateUserResponse);
+  rpc Like(MsgLike) returns (MsgLikeResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgCreateUser {
+  string creator = 1;
+  string name = 2;
+  string description = 3;
+}
+
+message MsgCreateUserResponse {
+  uint64 uid = 1;
+}
+
+message MsgUpdateUser {
+  string creator = 1;
+  string name = 2;
+  string description = 3;
+  uint64 uid = 4;
+}
+
+message MsgUpdateUserResponse {
+}
+
+message MsgLike {
+  string creator = 1;
+  uint64 uid = 2;
+}
+
+message MsgLikeResponse {
+  uint64 point = 1;
+}
+
+// this line is used by starport scaffolding # proto/tx/message
