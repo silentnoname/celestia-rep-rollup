@@ -2,10 +2,10 @@
 
 # set variables for the chain
 VALIDATOR_NAME=validator1
-CHAIN_ID=rep
-KEY_NAME=rep-1
-KEY_2_NAME=rep-2
-KEY_3_NAME=rep-3
+CHAIN_ID=rep-1
+KEY_NAME=rep-key
+KEY_2_NAME=rep-key-2
+KEY_3_NAME=rep-key-3
 CHAINFLAG="--chain-id ${CHAIN_ID}"
 TOKEN_AMOUNT="10000000000000000000000000stake"
 STAKING_AMOUNT="1000000000stake"
